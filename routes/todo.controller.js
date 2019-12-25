@@ -1,6 +1,6 @@
 module.exports = function(app) {
   app.get('/todo', hello) 
-  app.get('/index', index) 
+  app.get('/', index) 
 }
 
 const hello = (req, res, next) => {
