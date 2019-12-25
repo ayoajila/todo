@@ -1,5 +1,39 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .col
+      h1.display-2.text-center.mb-4 Listify
+      form(action="POST").col-6.mx-auto
+        .input-group.pb-3
+          input.form-control(type='text', placeholder="Yo, do something here ...", aria-label="todo input", aria-describedby='todo input')
+          .input-group-append
+            button.btn.btn-outline-secondary(type='button') Add
+      .row
+        .col
+          div.col-6.mx-auto
+            p.lead.pt-4 This is what is wrote todo
+            p.muted.pb-4 24/12/19
+            p.text-right
+              span.text-secondary edit
+              span.px-1 /
+              span.text-secondary remove
+            hr
+          div.col-6.mx-auto
+            p.lead.pt-4 This is what is wrote todo
+            p.muted.pb-4 24/12/19
+            p.text-right
+              span.text-secondary edit
+              span.px-1 /
+              span.text-secondary remove
+            hr
+          div.col-6.mx-auto
+            p.lead.pt-4 This is what is wrote todo
+            p.muted.pb-4 24/12/19
+            p.text-right
+              span.text-secondary edit
+              span.px-1 /
+              span.text-secondary remove
+            hr
+
+

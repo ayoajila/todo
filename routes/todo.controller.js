@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  app.get('/todo', hello) 
+  app.get('/todo', hello)
 }
 
 const hello = (req, res, next) => {
